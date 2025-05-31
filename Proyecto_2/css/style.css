@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oxygen', sans-serif; 
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/** HEADER **/
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: #59C173;  
+    background: -webkit-linear-gradient(to left,  hsla(261, 67%, 45%, 0.568), hsla(261, 61%, 69%, 0.568), hsla(135, 46%, 55%, 0.658)), url(../img/img-body.jpg);  
+    background: linear-gradient(to left, hsla(261, 67%, 45%, 0.527), hsla(261, 61%, 69%, 0.486), hsla(135, 46%, 55%, 0.658)), url(../img/img-body.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.menu-content .list{
+    text-align: right;
+    padding: 10px 20px 0 0;
+    list-style: none;
+    margin-right: 5px;
+}
+
+.menu-content .list a{
+    margin: 0px 10px;
+    padding: 8px;
+    text-decoration: none;
+    color: #59C173;
+    border-radius: 34px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.titulo-logo{
+    padding: 10px 20px 0 0;
+    margin-left: 15px;
+    display: flex;
+}
+
+.titulo-logo img{
+    width: 90px;
+    height: 70px;
+    margin: 20px;
+}
+
+.titulo-logo h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.menu-content .list a.activo{
+    color: blueviolet;
+    background: #fff;
+}
+
+.menu-content .list a:hover{
+    color: blueviolet;
+    background: #fff;
+}
+
+.textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+.textos-header h1{
+    font-size: 50px;
+    color: #000;
+}
+
+.textos-header h2{
+    font-weight: 300;
+    color: #000;
+    margin-top: 20px;
+}
+
+.getweva{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+}
+
+/** Sobre Nosotrso **/
+
+.contenedor-sobre-nsotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ilustracion_1{
+    width: 48%;
+}
+
+.contenedor-sobre-nsotros .contenido-texto{
+    width: 48%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 15px;
+}
+
+.contenido-texto h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+
+.contenido-texto p{
+    padding: 0px 0px 30px 15px ;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/** Portafolio **/
+
+.portafolio{
+    background: #fff;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-post{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.imagen-post > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: hsl(273, 91%, 27%, 0.7);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria span{
+    width: 50px;
+    padding: 40px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-post:hover .hover-galeria{
+    transform: scale(0);
+}
+
+/** Clientes **/
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+
+.cards .personas{
+    background: #4d0686;
+    display: flex;
+    width: 45%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .personas img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    display: block;
+}
+
+.cards .personas .contenido-texto{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .personas > .contenido-texto h4{
+    text-align: center;
+    padding: 10px;
+}
+
+.cards .personas > .contenido-texto p{
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+/** Nuestros servicios **/
+
+.abaout-servicios{
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+.servicios-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicios-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicios-ind img{
+    width: 90%;
+}
+
+.servicios-ind h3{
+    margin: 10px 0;
+}
+
+.servicios-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/** Footer**/
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom:  5px;
+    margin-bottom: 10px;
+}
+
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 24px 0 0 0;
+    color: #ccc;
+}
+
+@media screen and (max-width:900px){
+
+    head{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nsotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nsotros .contenido-texto{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    .getweva{
+        height: 20%;
+    }
+
+    /** Galeria **/
+
+    .imagen-post{
+        width: 44%;
+    }
+
+    /**Clientes**/
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .personas{
+        width: 90%;
+    }
+
+    .cards .personas:first-child{
+        margin-bottom: 30px;
+    }
+
+    .servicios-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicios-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicios-ind:nth-child(1), .servicios-ind:nth-child(2){
+        margin-bottom: 70px;
+    }
+
+    .servicios-ind img{
+        width: 90%;
+    }
+}
