@@ -75,9 +75,23 @@ body{
     z-index: 9999;
 }
 
-.menu .logo-box{
+/* ...existing code... */
+
+.menu .logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre logo y texto */
     margin-left: 20px;
+    height: 60px; /* Igual que el nav */
 }
+
+.menu .logo-box img {
+    height: 40px; /* Ajusta el tamaño del logo */
+    width: auto;
+    display: block;
+}
+
+/* ...existing code... */
 
 .menu .logo-box h1 a{
     text-decoration: none;
